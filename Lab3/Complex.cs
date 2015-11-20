@@ -38,6 +38,16 @@ namespace Lab3
             return new Complex(c.Real + 1, c.Imaginary + 1);
         }
 
+        public static double Argument(Complex c)
+        {
+            return Math.Atan(c.Imaginary/c.Real)*180/Math.PI;
+        }
+
+        public static double Module(Complex c)
+        {
+            return Math.Sqrt(Math.Pow(c.Real, 2) + Math.Pow(c.Imaginary, 2));
+        }
+
         public override string ToString()
         {
             return ($"{Real} + {Imaginary}i");
