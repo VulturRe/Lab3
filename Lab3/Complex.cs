@@ -38,19 +38,32 @@ namespace Lab3
             return new Complex(c.Real + 1, c.Imaginary + 1);
         }
 
-        public static double Argument(Complex c)
+        public double Argument()
         {
-            return Math.Atan(c.Imaginary/c.Real)*180/Math.PI;
+            return Math.Atan(Imaginary/Real);
         }
 
-        public static double Module(Complex c)
+        public double Module()
         {
-            return Math.Sqrt(Math.Pow(c.Real, 2) + Math.Pow(c.Imaginary, 2));
+            return Math.Sqrt(Math.Pow(Real, 2) + Math.Pow(Imaginary, 2));
         }
 
-        public override string ToString()
+        public Complex Root(double basee)
         {
-            return ($"{Real} + {Imaginary}i");
+            return new Complex(Math.Pow(Module(), 1/basee)*Math.Cos(Argument()/basee), 
+                Math.Pow(Module(), 1/basee)*Math.Sin(Argument()/basee));
+        }
+
+        public override string ToString() => ($"{Math.Round(Real, 3)} + {Math.Round(Imaginary, 3)}i");
+    }
+
+    class TestComplex
+    {
+        static void Main()
+        {
+            var num1 = new Complex(1, 2);
+            Console.WriteLine(num1.Root(2));
+            Console.ReadLine();
         }
     }
 }
