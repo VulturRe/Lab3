@@ -25,12 +25,14 @@ namespace Lab3
 
         public static Complex operator *(Complex c1, Complex c2)
         {
-            return new Complex(c1.Real * c2.Real - c1.Imaginary * c2.Imaginary, c1.Real * c2.Imaginary + c1.Imaginary * c2.Real);
+            return new Complex(c1.Real * c2.Real - c1.Imaginary * c2.Imaginary,
+                c1.Real * c2.Imaginary + c1.Imaginary * c2.Real);
         }
 
         public static Complex operator /(Complex c1, Complex c2)
         {
-            return new Complex((c1.Real * c2.Real + c1.Imaginary * c2.Imaginary)/(Math.Pow(c2.Real, 2) + Math.Pow(c2.Imaginary, 2)), (c2.Real * c1.Imaginary - c1.Real * c2.Imaginary)/(Math.Pow(c2.Real, 2) + Math.Pow(c2.Imaginary, 2)));
+            return new Complex((c1.Real * c2.Real + c1.Imaginary * c2.Imaginary)/(Math.Pow(c2.Real, 2) + Math.Pow(c2.Imaginary, 2)),
+                (c2.Real * c1.Imaginary - c1.Real * c2.Imaginary)/(Math.Pow(c2.Real, 2) + Math.Pow(c2.Imaginary, 2)));
         }
 
         public static Complex operator ++(Complex c)
