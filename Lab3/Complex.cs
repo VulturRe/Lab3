@@ -54,6 +54,8 @@ namespace Lab3
                 Math.Pow(Module(), 1/basee)*Math.Sin(Argument()/basee));
         }
 
+        // Перегрузка метода ToString() для вывода комплексного числа
+        // в традиционном формате
         public override string ToString() => ($"{Math.Round(Real, 3)} + {Math.Round(Imaginary, 3)}i");
     }
 
@@ -61,8 +63,19 @@ namespace Lab3
     {
         static void Main()
         {
-            var num1 = new Complex(1, 2);
-            Console.WriteLine(num1.Root(2));
+            Console.WriteLine("Введите 1 комплексное число (сначала действительную, затем мнимую части).");
+            var a = new Complex(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()));
+            Console.WriteLine("Введите 2 комплексное число");
+            var b = new Complex(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()));
+            Console.WriteLine("Введите 3 комплексное число");
+            var c = new Complex(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()));
+            Console.WriteLine("Введите 4 комплексное число");
+            var d = new Complex(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()));
+            Console.Clear();
+            var r = a.Root(3) - (b + c)/a + b*d;
+            Console.WriteLine("R = {0}", r);
+            Console.WriteLine("Модуль числа R = {0}", r.Module());
+            Console.WriteLine("Число R с увеличенными действительным и мнимой частями на 1 = {0}", ++r);
             Console.ReadLine();
         }
     }
