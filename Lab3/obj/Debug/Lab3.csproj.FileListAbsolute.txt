@@ -1,6 +1,0 @@
-c:\users\ilshat\documents\visual studio 2015\Projects\Lab3\Lab3\bin\Debug\Lab3.exe.config
-C:\Users\ilshat\Documents\Visual Studio 2015\Projects\Lab3\Lab3\bin\Debug\Lab3.exe
-C:\Users\ilshat\Documents\Visual Studio 2015\Projects\Lab3\Lab3\bin\Debug\Lab3.pdb
-C:\Users\ilshat\Documents\Visual Studio 2015\Projects\Lab3\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
-C:\Users\ilshat\Documents\Visual Studio 2015\Projects\Lab3\Lab3\obj\Debug\Lab3.exe
-C:\Users\ilshat\Documents\Visual Studio 2015\Projects\Lab3\Lab3\obj\Debug\Lab3.pdb

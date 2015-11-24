@@ -1,6 +1,0 @@
-C:\Users\ilshat\Documents\Visual Studio 2015\Projects\Lab3\Lab3_classroom\bin\Debug\Lab3_classroom.exe.config
-C:\Users\ilshat\Documents\Visual Studio 2015\Projects\Lab3\Lab3_classroom\bin\Debug\Lab3_classroom.exe
-C:\Users\ilshat\Documents\Visual Studio 2015\Projects\Lab3\Lab3_classroom\bin\Debug\Lab3_classroom.pdb
-C:\Users\ilshat\Documents\Visual Studio 2015\Projects\Lab3\Lab3_classroom\obj\Debug\Lab3_classroom.exe
-C:\Users\ilshat\Documents\Visual Studio 2015\Projects\Lab3\Lab3_classroom\obj\Debug\Lab3_classroom.pdb
-C:\Users\ilshat\Documents\Visual Studio 2015\Projects\Lab3\Lab3_classroom\obj\Debug\Lab3_classroom.csprojResolveAssemblyReference.cache
