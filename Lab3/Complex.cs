@@ -56,6 +56,11 @@ namespace Lab3
                 Math.Pow(Module(), 1/basee)*Math.Sin(Argument()/basee));
         }
 
+        public Complex Trigon()
+        {
+            return new Complex(Math.Cos(Argument()), Math.Sin(Argument()));
+        }
+
         // Перегрузка метода ToString() для вывода комплексного числа
         // в традиционном формате
         public override string ToString() => ($"{Math.Round(Real, 3)} + {Math.Round(Imaginary, 3)}i");
@@ -76,6 +81,7 @@ namespace Lab3
             Console.Clear();
             var r = a.Root(3) - (b + c)/a + b*d;
             Console.WriteLine("R = {0}", r);
+            Console.WriteLine(r.Trigon());
             Console.WriteLine("Модуль числа R = {0}", r.Module());
             Console.WriteLine("Число R с увеличенными действительным и мнимой частями на 1 = {0}", ++r);
             Console.ReadLine();
